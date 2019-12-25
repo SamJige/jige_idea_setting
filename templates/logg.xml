@@ -1,0 +1,19 @@
+<templateSet group="logg">
+  <template name="log" value="org.slf4j.LoggerFactory.getLogger(getClass()).info(&quot;$data$ -&gt; {}&quot;, $data$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logg" value="org.slf4j.LoggerFactory.getLogger(getClass()).info(&quot;$data$ -&gt; {}&quot;, com.alibaba.fastjson.JSON.toJSONString($data$));" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="err" value="org.slf4j.LoggerFactory.getLogger(getClass()).error(&quot;error -&gt;&quot;, e);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
