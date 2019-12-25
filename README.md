@@ -1,0 +1,1 @@
+# jige_idea_setting
